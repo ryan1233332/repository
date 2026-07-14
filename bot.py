@@ -1,4 +1,5 @@
 import discord
+import os  # Essencial para ler a variável de ambiente
 from discord.ext import commands
 from discord.ui import Button, View
 from aiohttp import web
@@ -7,8 +8,9 @@ import asyncio
 from datetime import datetime
 
 # --- CONFIGURAÇÕES DO SEU BOT ---
-TOKEN = "MTUyNjY3NzkwMTY0OTY0NTYzOQ.GQQwFo.kqkY6kq8t_QfZ6ELe0r1rRSZtvG21qg32bK5wY"
-CHANNEL_ID = 526677200793895046  # Canal onde aparecem os botões de Aprovar/Recusar
+# O token não é mais escrito aqui. Ele é lido do Railway.
+TOKEN = os.getenv("DISCORD_TOKEN") 
+CHANNEL_ID = 526677200793895046
 
 # --- WEBHOOK EXCLUSIVO PARA LOGS ---
 LOG_WEBHOOK_URL = "https://discord.com/api/webhooks/1526690019534966906/mvQ772xJCUSg_avc0IPajSaz4_w81RUe-1UtwYKD8FI2Vh8xkwQLC8wFNu7dsGKb7CmH"
