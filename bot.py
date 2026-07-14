@@ -41,7 +41,7 @@ class SlangifyBot(commands.Bot):
         print("⚡ API do Bot rodando em http://localhost:8080")
 
     async def close(self):
-        # Cleanup do servidor ao desligar o bot
+        # Cleanup do servidor ao desligar o bo
         if self.web_runner:
             await self.web_runner.cleanup()
         await super().close()
