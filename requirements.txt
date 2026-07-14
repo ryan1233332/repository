@@ -1,4 +1,4 @@
 streamlit
-requests
+openai
 discord.py
-aiohttp
+requests
