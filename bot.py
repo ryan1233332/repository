@@ -179,7 +179,7 @@ async def handle_request_access(request):
                 campos=[
                     {"name": "👤 Usuário", "value": f"`@{username}`", "inline": True},
                     {"name": "🌐 IP", "value": f"`{ip}`", "inline": True},
-                    {"name": "📝 Motivo", "value:motivo", "inline": False}
+                    {"name": "📝 Motivo", "value": motivo, "inline": False}
                 ]
             )
             
